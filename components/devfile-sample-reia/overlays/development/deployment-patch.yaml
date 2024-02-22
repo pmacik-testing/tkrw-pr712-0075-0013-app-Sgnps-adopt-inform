@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-reia
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0013-tenant/tkrw-pr712-0075-0013-app/devfile-sample-reia@sha256:067a810f3eedce1a5b42ab72076e39bd4ba0f241829b03e9cd620340a3e2ab30
+        name: my-nodejs
+        resources: {}
+status: {}
